@@ -5,12 +5,14 @@
     <title>Dashboard | eVotee</title>
 </head>
 <body>
-    <h1>eVotee</h1>
-    <button>Back</button>
-    <button>Logout<button>
-    <h2>Online Voting System</h2>
+    <div id="header_section">
+        <h1>eVotee</h1>
+        <button>Back</button>
+        <button>Logout<button>
+        <h2>Online Voting System</h2>
+    </div>
     <hr>
-    <h3>Dashboard</h3>
+    <h2>Dashboard</h2>
     <div id = "profile"></div>
     <div id = "group"></div>
 </body>
