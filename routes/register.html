@@ -17,24 +17,24 @@
     <centre>
         <div class="card">
             <h2>Register</h2>
-            <form action="#">
-                <input type="text" id="fname" placeholder="Enter your First Name" />
-                <input type="text" id="lname" placeholder="Enter your Last Name" />
+            <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+                <input type="text" id="fname" name ="fname" placeholder="Enter your First Name" />
+                <input type="text" id="lname" name ="lname" placeholder="Enter your Last Name" />
                 <br> <br>
-                <input type="password" id="pass" placeholder="Enter your Password" />
-                <input type="password" id="conf_pass" placeholder="Confirm your Password" />
+                <input type="password" id="pass" name ="pass" placeholder="Enter your Password" />
+                <input type="password" id="conf_pass" name ="conf_pass" placeholder="Confirm your Password" />
                 <br> <br>
-                <input type="text" id="addr" placeholder="Enter your Address" />
+                <input type="text" id="addr" name ="address" placeholder="Enter your Address" />
                 <br> <br>
-                <input type="number" id="mobile" placeholder="Enter 10-digit mobile number" />
+                <input type="number" id="mobile" name ="mobile" placeholder="Enter 10-digit mobile number" />
                 <label for="role">Role: </label>
-                <select name="role" id="role" style="min-width: 21%;">
+                <select name="role" id="role" style="min-width: 21%;" name ="role">
                     <option value="1">Voter</option>
                     <option value="2">Group</option>
                 </select>
                 <br> <br>
                 <label for="photo">Upload Photo: </label>
-                <input type="file" id="photo" style="min-width: 35%; padding-top: 12px;"/>
+                <input type="file" id="photo" name ="photo" style="min-width: 35%; padding-top: 12px;"/>
                 <br> <br>
                 <button id="btn">Register</button>
                 <br> <br>
