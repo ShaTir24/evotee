@@ -17,14 +17,14 @@
     <centre>
         <div class="card">
             <h2>Login</h2>
-            <form action="#">
+            <form action="api/login.php" method="POST">
 
-                <input type="number" id="mobile" placeholder="Enter 10-digit mobile number" />
+                <input type="number" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" />
                 <br> <br>
 
-                <input type="password" id="pass" placeholder="Enter your Password" />
+                <input type="password" id="pass" name="pass" placeholder="Enter your Password" />
                 <br> <br>
-                <select name="role" id="role">
+                <select name="role" id="role" name="role">
                     <option value="1">Voter</option>
                     <option value="2">Group</option>
                 </select>
